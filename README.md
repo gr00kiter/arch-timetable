@@ -1,53 +1,69 @@
 # Reboot架构师课程表
 
-## 一、运维开发趋势&基础知识
-* 系统架构师日常工作、大公司现状、职业发展与规划、课程与师资介绍
-* Python基础语法知识回顾：
-  * Python在Linux系统中的应用和地位
-  * Python安装与运行，iPython调试工具
-  * Python dict和list、set的用法；迭代器原理
+## 一、架构师工作介绍&基础知识
+* 系统架构师日常工作:
+  * BAT架构师日常
+  * 架构师课程与师资介绍
+* Python在Linux系统中的应用和地位
+* 数据结构基础
+  * 数组、链表、Hash、二叉树
+* 从Python源代码分析:
+  * Python基础语法
+  * Python dict和list、set的性能特质
+  * 迭代器原理
   * Python内置数据结构的实现和特性，如何写出更加高效的程序
-
-* 练习课程（nginx日志分析）：
+* 课堂练习：
+  * iPython调试工具
   * Linux文件系统原理，inode、空洞文件。
   * Python文件操作，顺序读写，随机读写。
   * Python语法练习
   * 运用Python实现一个词频统计脚本
 
-## 二、Python Web开发入门&实战
-* MySQL增删改查、Python语法
+## 二、计算机体系&数据库
+* CPU L1、L2 cache介绍以及对性能的影响
+* Linux Buffer、Cache对性能的影响
+* HTTP、TCP、IP协议详解
+  * HTTP协议基础，各种常见header的含义
+  * HTTP性能优化：KeepAlive、连接复用
+  * HTTP、TCP、UDP等常见协议的关系
+* 1000G级别CDN系统设计要点
+* MVC介绍，MVC的演进历史，MVC的思想
+* 课堂练习：
+  * MySQL增删改查、Python语法
   * 函数的应用，函数的意义，代码复用的意义
   * Python模块化；Python的面向对象
-  * Python连接MySQL
   * 数据库常见设计规则；数据库原理简介，数据库架构剖析
-* 框架和前端结合和HTML基础
-  * HTTP协议基础，各种常见header的含义
-  * HTTP、TCP、UDP等常见协议的关系
-  * MVC介绍，MVC的演进历史，MVC的思想
 
-## 三、Python网络编程，正则
+## 三、初级网络编程&爬虫
 * Python网络编程：
   * urllib、urllib2库
-* 正则基础
-  * 用Python实现一个简易的网络爬虫
+  * 同步网络编程&异步网络编程
+* Python实现网络爬虫
+  * 正则基础
   * 实战抓取网站资源
   * 怎么抓取异步加载的网页
+  * 介绍分布式网络爬虫
+* Python的reflection
   * 在指导下自主开发监控项
-（磁盘、网络、账号、采集插件，以CPU、内存、nginx、MySQL信息）
+  * 磁盘、网络、CPU、内存
+* 课堂练习：
+  * 实战网络爬虫，批量下载用户头像
 
-## 四、Python高级语法
+## 四、Python高级编程&MapReduce
 * Python高阶语法
-  * 装饰器，介绍几个常用的装饰器
+  * 装饰器原理介绍
+  * 通用超时设定装饰器
+  * 用Python实现"bash -x"
   * 不定长参数，默认参数
   * 神奇的yield，__iter__，实现一个自己的xrange
-* Map&Reduce思想简介
-  * Python模拟大数据基石Hadoop
-* 实战网络爬虫
-  * 实现一个简单的资源下载器"
+* 大数据的基石：MapReduce思想介绍
+  * Python实现MapReduce
+* 课堂练习：
+  * 实战多线程网络爬虫
 
 
-## 五、多进程&多线程
-* Python多进程，多线程编程，实现多进程调度框架：
+## 五、Linux多进程&多线程
+* 多进程，多线程编程，实现多进程调度框架：
   * 多进程多线程的产生，在Linux系统中的地位
   * 多进程和多线程的选用场景
   * 多进程、多线程基础；为什么不能一味的开线程解决问题
@@ -55,38 +71,46 @@
   * 程序运行时的内存布局
   * 从系统底层看Python的多进程、多线程实现，分析GIL
   * 守护进程，用Python实现一个守护进程
-* Python多线程实战，多进程实战
-  * 实现一个多线程下载工具
+* 课堂练习：
+  * Python多线程实战，多进程实战
+  * 多线程协同工作实现数据采集&上报
+  * 数据队列和锁的使用
 
 ## 六、异步网络编程
-* 介绍Python网络编程常用框架：
-  * 异步网络编程思想；为什么Nginx能秒杀Apache
+* Python网络编程常用框架：
   * Twisted框架
   * 用Twisted网络框架实现一个RPC调用的Client和Server
   * 长连接和短连接，推送机制的实现
   * 通信协议的实现，通信协议的关键点
   * 深入理解HTTP协议
   * 为什么HTTP协议是现在这个样子
-
+* 异步网络编程思想
+  * 为什么Nginx能秒杀Apache
+* 课堂练习：
+  * 不用任何第三方库实现一个简化的HTTP服务器
 
 ## 七、高级网络编程（一）
 * 屠龙之技：异步非阻塞网络编程实战
   * 分析memcached并发模型
   * 比较各类网络编程技法的优劣
   * 有限状态机实战
-* 各种主流平台的网络编程现状（Win、Linux、UNIX）
+* Win、Linux、UNIX网络编程现状
   * select、poll、epoll、kqueue、IOCP、libevent
   * 水平触发LT & 边沿触发ET
   * 用Python实现一个基于memcached思想的网络编程库nbNet
-
+* 课堂练习：
+  * nbNet网络库微调
+  * 用nbNet实现Telnet协议
 
 ## 八、高级网络编程（二）
 * 屠龙之技：异步非阻塞网络编程深入
   * 深入剖析异步非阻塞网络编程
   * 长连接&连接池的应用，智能路由算法的原理与工程实现
   * 用nbNet实现监控数据持久化模块
-  * 用nbNet实现监控数据中转模块
-  * 用nbNet实现监控数据报警模块
+  * 用nbNet实现监控数据中转模块Transfer
+  * 用nbNet实现监控数据报警模块DB-Saver
+* 海量数据Sharding实战
+* 课堂练习：
   * 动手实现“连续n次触发阈值报警”,“60s内只报警n次”
   * 监控系统前后端联调
 
