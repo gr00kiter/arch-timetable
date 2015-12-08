@@ -8,16 +8,13 @@
 * 数据结构基础
   * 数组、链表、Hash、二叉树
 * 从Python源代码分析:
-  * Python基础语法
+  * Python基础语法实现的机理
   * Python dict和list、set的性能特质
   * 迭代器原理
   * Python内置数据结构的实现和特性，如何写出更加高效的程序
 * 课堂练习：
-  * iPython调试工具
   * Linux文件系统原理，inode、空洞文件。
   * Python文件操作，顺序读写，随机读写。
-  * Python语法练习
-  * 运用Python实现一个词频统计脚本
 
 ## 二、计算机体系&数据库
 * CPU L1、L2 cache介绍以及对性能的影响
@@ -29,14 +26,14 @@
 * 1000G级别CDN系统设计要点
 * MVC介绍，MVC的演进历史，MVC的思想
 * 课堂练习：
-  * MySQL增删改查、Python语法
   * 函数的应用，函数的意义，代码复用的意义
   * Python模块化；Python的面向对象
   * 数据库常见设计规则；数据库原理简介，数据库架构剖析
 
 ## 三、初级网络编程&爬虫
 * Python网络编程：
-  * urllib、urllib2库
+  * 从urllib、urllib2库到requests
+  * Cookie和Session的原理
   * 同步网络编程&异步网络编程
 * Python实现网络爬虫
   * 正则基础
@@ -130,6 +127,7 @@
   * 介绍我们将要开发的系统架构
 * 分布式系统理论介绍
   * CAP定理及其推导
+  * BASE 和 ACID
   * 一致性算法简介：Paxos、Raft
 * 集群管理系统实战，实现批量命令执行的Client和Server端：
   * 控制系统简介
