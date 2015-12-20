@@ -24,12 +24,12 @@
   * HTTP性能优化：KeepAlive、连接复用
   * HTTP、TCP、UDP等常见协议的关系
 * MVC介绍，MVC的演进历史，MVC的思想
-* 名企架构剖析
-  * 1000G级别CDN系统设计要点
 * 课堂练习：
   * 函数的应用，函数的意义，代码复用的意义
   * Python模块化；Python的面向对象
   * 数据库常见设计规则；数据库原理简介，数据库架构剖析
+* 名企架构剖析
+  * 1000G级别CDN系统设计要点
 
 ## 三、初级网络编程&爬虫
 * Python网络编程：
@@ -44,10 +44,10 @@
 * Python的reflection
   * 在指导下自主开发监控项
   * 磁盘、网络、CPU、内存
-* 名企架构剖析
-  * 豆瓣架构演进----BeansDB、DoubanFS
 * 课堂练习：
   * 实战网络爬虫，批量下载用户头像
+* 名企架构剖析
+  * 豆瓣架构演进----BeansDB、DoubanFS
 
 ## 四、Python高级编程&MapReduce
 * Python高阶语法
@@ -58,10 +58,10 @@
   * 神奇的yield，__iter__，实现一个自己的xrange
 * 大数据的基石：MapReduce思想介绍
   * Python实现MapReduce
-* 名企架构剖析
-  * Google 分布式计算集群
 * 课堂练习：
   * 实战多线程网络爬虫
+* 名企架构剖析
+  * Google 分布式计算集群
 
 
 ## 五、Linux多进程&多线程
@@ -73,12 +73,12 @@
   * 程序运行时的内存布局
   * 从系统底层看Python的多进程、多线程实现，分析GIL
   * 守护进程，用Python实现一个守护进程
-* 名企架构剖析
-  * Google分布式文件系统
 * 课堂练习：
   * Python多线程实战，多进程实战
   * 多线程协同工作实现数据采集&上报
   * 数据队列和锁的使用
+* 名企架构剖析
+  * Google分布式文件系统
 
 ## 六、异步网络编程
 * Python网络编程常用框架：
@@ -90,10 +90,10 @@
   * 为什么HTTP协议是现在这个样子
 * 异步网络编程思想
   * 为什么Nginx能秒杀Apache
-* 名企架构剖析
-  * Facebook 架构探秘----日志、HipHop、BigPipe and more
 * 课堂练习：
   * 不用任何第三方库实现一个简化的HTTP服务器
+* 名企架构剖析
+  * Facebook 架构探秘----日志、HipHop、BigPipe and more
 
 ## 七、高级网络编程（一）
 * 屠龙之技：异步非阻塞网络编程实战
@@ -104,11 +104,11 @@
   * select、poll、epoll、kqueue、IOCP、libevent
   * 水平触发LT & 边沿触发ET
   * 用Python实现一个基于memcached思想的网络编程库nbNet
-* 名企架构剖析
-  * Twitter 架构探秘----Scaling、Cache、Tracing
 * 课堂练习：
   * nbNet网络库微调
   * 用nbNet实现Telnet协议
+* 名企架构剖析
+  * Twitter 架构探秘----Scaling、Cache、Tracing
 
 ## 八、高级网络编程（二）
 * 屠龙之技：异步非阻塞网络编程深入
@@ -117,11 +117,11 @@
   * 用nbNet实现监控数据持久化模块
   * 用nbNet实现监控数据中转模块Transfer
   * 用nbNet实现监控数据报警模块DB-Saver
-* 名企架构剖析
-  * 百亿量级数据库架构----Pinterest
 * 课堂练习：
   * 动手实现“连续n次触发阈值报警”,“60s内只报警n次”
   * 监控系统前后端联调
+* 名企架构剖析
+  * 百亿量级数据库架构----Pinterest
 
 ## 九、监控框架
 * Agent多进程调度框架实战和监控数据缓存、持久化前端数据API封装与实现：
@@ -142,12 +142,12 @@
   * CAP定理及其推导
   * BASE 和 ACID
   * 一致性算法简介：Paxos、Raft
-* 名企架构剖析
-  * Google Chubby分布式锁服务
-  * Apache ZooKeeper分布式配置管理
 * 集群管理系统实战，实现批量命令执行的Client和Server端：
   * 控制系统简介
   * 实现能批量分发控制指令的控制系统
+* 名企架构剖析
+  * Google Chubby分布式锁服务
+  * Apache ZooKeeper分布式配置管理
 
 
 ## 十一、综合大实战
